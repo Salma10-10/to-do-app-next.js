@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding to ensure proper display of special characters -->
+    <meta charset="UTF-8">
+    <!-- Viewport settings for responsiveness on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage, displayed on the browser tab -->
+    <title>To-Do List Application</title>
+
+    <!-- Link to external CSS file for styling the page -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Container for the whole to-do list application content -->
+    <div class="container">
+
+        <!-- Main heading of the application -->
+        <h1>To-Do List Application</h1>
+
+        <!-- Input field for searching tasks (filtering functionality) -->
+        <input type="text" id="search" placeholder="Search Tasks..." oninput="searchTasks()">
+        <!-- The 'oninput' event triggers the searchTasks function whenever the user types in the search box -->
+
+        <!-- Input field and button for adding new tasks -->
+        <div>
+            <!-- Input for entering a new task -->
+            <input type="text" id="task-input" placeholder="Enter a new task">
+            <!-- Button to add the task to the list, calls the addTask() function when clicked -->
+            <button id="add-task" onclick="addTask()">Add Task</button>
+        </div>
+
+        <!-- Unordered list (ul) to display the list of tasks -->
+        <ul id="task-list"></ul>
+        <!-- Each task will be listed here dynamically using JavaScript -->
+
+    </div>
+
+    <!-- Link to the JavaScript file that handles the application logic -->
+    <script src="app.js"></script>
+</body>
+
+</html>

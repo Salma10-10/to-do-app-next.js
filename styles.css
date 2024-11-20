@@ -1,0 +1,145 @@
+/* Overall body styling */
+body {
+    font-family: Arial, sans-serif;
+    /* Sets a clean and readable font */
+    background-color: #f4f4f4;
+    /* Light gray background for the entire page */
+    display: flex;
+    /* Aligns content in a flexible box layout */
+    justify-content: center;
+    /* Centers the container horizontally */
+    padding: 20px;
+    /* Adds space around the body content */
+}
+
+/* Main container styling */
+.container {
+    background-color: white;
+    /* White background for better visibility */
+    padding: 20px;
+    /* Adds internal space inside the container */
+    border-radius: 8px;
+    /* Rounds the corners of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow for depth */
+    width: 400px;
+    /* Sets a fixed width for the container */
+}
+
+/* Styling for the main heading */
+h1 {
+    text-align: center;
+    /* Centers the text */
+    margin-bottom: 20px;
+    /* Adds space below the heading */
+}
+
+/* Input field for adding tasks */
+#task-input {
+    padding: 10px;
+    /* Adds internal padding for a better user experience */
+    width: 70%;
+    /* Makes the input field take 70% of the container width */
+    margin-right: 10px;
+    /* Adds space between the input field and the button */
+    border: 1px solid #ddd;
+    /* Adds a light border */
+    border-radius: 5px;
+    /* Rounds the corners of the input field */
+}
+
+/* Button for adding tasks */
+#add-task {
+    padding: 10px;
+    /* Internal padding for the button */
+    background-color: #28a745;
+    /* Green background to indicate positive action */
+    color: white;
+    /* White text for contrast */
+    border: none;
+    /* Removes the default button border */
+    border-radius: 5px;
+    /* Rounds the corners of the button */
+    cursor: pointer;
+    /* Changes the cursor to a pointer on hover */
+}
+
+/* Hover effect for the Add Task button */
+#add-task:hover {
+    background-color: #218838;
+    /* Slightly darker green for hover state */
+}
+
+/* List of tasks styling */
+#task-list {
+    list-style: none;
+    /* Removes default list bullets */
+    padding: 0;
+    /* Removes padding around the list */
+    margin-top: 20px;
+    /* Adds space above the task list */
+}
+
+/* Individual task item styling */
+.task-item {
+    background-color: #f9f9f9;
+    /* Light background for tasks */
+    padding: 10px;
+    /* Internal padding for spacing */
+    margin-bottom: 10px;
+    /* Space between task items */
+    border-radius: 5px;
+    /* Rounded corners for tasks */
+    display: flex;
+    /* Flexbox layout to align content horizontally */
+    justify-content: space-between;
+    /* Places content at both ends */
+    align-items: center;
+    /* Vertically centers content within the task */
+    border: 1px solid #ddd;
+    /* Light border for task separation */
+}
+
+/* Buttons inside individual tasks */
+.task-item button {
+    background-color: #dc3545;
+    /* Red background for delete buttons */
+    color: white;
+    /* White text for contrast */
+    border: none;
+    /* Removes default button border */
+    padding: 5px;
+    /* Internal padding for spacing */
+    border-radius: 5px;
+    /* Rounds the corners of the button */
+    cursor: pointer;
+    /* Changes cursor to pointer on hover */
+}
+
+/* Hover effect for task buttons */
+.task-item button:hover {
+    background-color: #c82333;
+    /* Darker red on hover for better feedback */
+}
+
+/* Styling for completed tasks */
+.task-item.done {
+    text-decoration: line-through;
+    /* Strikes through completed tasks */
+    background-color: #d4edda;
+    /* Light green background for done tasks */
+}
+
+/* Search bar styling */
+#search {
+    padding: 10px;
+    /* Internal padding for better usability */
+    width: 100%;
+    /* Makes the search bar span the full width of the container */
+    margin-bottom: 20px;
+    /* Adds space below the search bar */
+    border: 1px solid #ddd;
+    /* Light border around the search bar */
+    border-radius: 5px;
+    /* Rounds the corners of the search bar */
+}
